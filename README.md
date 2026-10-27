@@ -103,7 +103,7 @@ ssh-keygen -t ed25519
 На все вопросы — Enter. Затем скопируйте ключ на сервер:
 
 ```powershell
-type %USERPROFILE%\.ssh\id_ed25519.pub | ssh wil@192.168.1.102 "cat >> ~/.ssh/authorized_keys"
+type %USERPROFILE%\.ssh\id_ed25519.pub | ssh vadim@192.168.1.102 "cat >> ~/.ssh/authorized_keys"
 ```
 
 Проверка (пароль не должен запрашиваться):
@@ -115,9 +115,9 @@ ssh wil@192.168.1.102
 ### 1.9. Проверка интернета
 
 ```bash
-wget https://github.com/Knyaz-v/java-module-3/blob/master/src/main/webapp/index.jsp
+wget https://github.com/Cheshyuka/3-java-file-manager/blob/main/src/main/webapp/fileList.js
 ls -la
-rm index.jsp
+rm fileList.jsp
 ```
 
 ---
@@ -146,7 +146,7 @@ curl http://localhost:8000
 ### 2.3. Копирование на сервер
 
 ```bash
-scp demo-0.0.1-SNAPSHOT.jar wil@192.168.1.102:~/projects/demo.jar
+scp demo-0.0.1-SNAPSHOT.jar vadim@192.168.1.102:~/projects/demo.jar
 ```
 
 ### 2.4. Запуск в фоне
